@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
 import { PRODUCTS } from '../../../ProducList'; // Assuming this contains the array of products
 import { Link, useNavigate } from 'react-router-dom';
+import Footer from '../../Component/Footer';
 
 const Complete = () => {
   const { cartItems, getTotalAmount } = useContext(ShopContext);
@@ -25,12 +26,12 @@ const Complete = () => {
         ))}
       </ul>
       </div>
-      <div className='mt-10 font-bold ml-40 text-4xl text-center'>
+      <div className='mt-10 font-bold ml-40 text-4xl text-center mb-96'>
       <h2> Your oreder was succesfull, Total Amount: ${totalAmount}</h2>
       <p>wish to continue </p><button onClick={()=>navigate("/shop")} className='text-blue-500'>Click here</button>
       </div>
 
-      
+      <Footer/>
       
     </div>
   );
