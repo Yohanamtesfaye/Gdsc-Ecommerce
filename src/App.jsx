@@ -7,19 +7,25 @@ import Shop from './Pages/Shop/Shop';
 import Cart from './Pages/Cart/Cart';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
+import ShopContextProvider from './Context/ShopContext';
+import Complete from './Pages/Shop/Complete';
 
 function App() {
   return (
     <>
       <div>
-        <BrowserRouter>
-        <Navbar/>
-          <Routes>
-          <Route path='/' element= {<Home/>} />
-          <Route path='/shop' element={<Shop/>} />
-          <Route path='/cart' element={<Cart/>} />
-          </Routes>
-        </BrowserRouter>
+        <ShopContextProvider>
+          <BrowserRouter>
+          <Navbar/>
+            <Routes>
+            <Route path='/' element= {<Home/>} />
+            <Route path='/shop' element={<Shop/>} />
+            <Route path='/cart' element={<Cart/>} />
+            <Route path='/complete' element={<Complete/>} />
+            </Routes>
+          </BrowserRouter>
+        </ShopContextProvider>
+       
 
       </div>
     </>
