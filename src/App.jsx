@@ -9,6 +9,7 @@ import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import ShopContextProvider from './Context/ShopContext';
 import Complete from './Pages/Shop/Complete';
+import PageNotFound from './Component/PageNotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/shop' element={<Shop/>} />
             <Route path='/cart' element={<Cart/>} />
             <Route path='/complete' element={<Complete/>} />
+            <Route path ='*' element = {<PageNotFound/>}/>
             </Routes>
           </BrowserRouter>
         </ShopContextProvider>

@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import { Link, useNavigate } from 'react-router-dom';
 import emptyCart from '../../Images/emptyCartjpg.jpg'
 const Cart = () => {
-  const {cartItems, getTotalAmount} = useContext(ShopContext);
+  const {cartItems, getTotalAmount, resetCart} = useContext(ShopContext);
   const totaAmount = getTotalAmount();
   const navigate = useNavigate()
   return (
@@ -36,8 +36,8 @@ const Cart = () => {
             <h3 >Shipping: <span className='ml-44'>Calculated at next step</span></h3>
             <hr  className="border-b border-gray-500 my-4 mt-5" />
             <h3 >Total: <span className='ml-52'>${totaAmount}</span></h3>
-            <button className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-14 rounded mt-5"
-          onClick={()=>navigate("/complete")}
+            <button type='reset' className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-14 rounded mt-5"
+          onClick={()=>navigate("/complete") && resetCart() }
           >Continue To Checkout</button>
           </>}
         
