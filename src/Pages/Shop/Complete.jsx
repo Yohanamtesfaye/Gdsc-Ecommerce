@@ -13,8 +13,12 @@ const Complete = () => {
 
   return (
     <div>
+       <div className='mt-10 font-bold ml-40 text-4xl text-center '>
+         <h2> Your oreder was succesfull, Total Amount: ${totalAmount}</h2>
+         <p>wish to continue </p><button onClick={()=>navigate("/shop")} className='text-blue-500'>Click here</button>
+      </div>
       <h1 className=' font-serif text-4xl font-bold mt-10'>Bought Items</h1>
-      <div className='mt-10'>
+      <div className='mt-10 mb-96'>
       <ul>
         {productsInCart.map(product => (
           <li key={product.id}>
@@ -26,10 +30,7 @@ const Complete = () => {
         ))}
       </ul>
       </div>
-      <div className='mt-10 font-bold ml-40 text-4xl text-center mb-96'>
-      <h2> Your oreder was succesfull, Total Amount: ${totalAmount}</h2>
-      <p>wish to continue </p><button onClick={()=>navigate("/shop")} className='text-blue-500'>Click here</button>
-      </div>
+     
 
       <Footer/>
       
