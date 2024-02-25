@@ -1,5 +1,4 @@
 import React from 'react'
-import Search from '../../Component/Search'
 import { PRODUCTS } from '../../../ProducList'
 import Product from './Product'
 import Footer from '../../Component/Footer'
@@ -17,7 +16,6 @@ const Shop = () => {
         </div>
 
         <div>
-          <Search/>
         </div>
       </div>
      <div>
