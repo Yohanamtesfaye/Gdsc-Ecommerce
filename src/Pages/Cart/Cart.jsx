@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     <div>
       <div className='px-4 sm:px-6 lg:px-8 pt-10'>
-      <h1 className='text-4xl font-bold font-sans text-center mb-8'>Your Cart</h1>
+      <h1 className='text-4xl font-bold font-mono text-center mb-8'>Your Cart</h1>
       {totaAmount ==0 &&
         <>
         <div className="flex flex-col items-center">
@@ -32,7 +32,7 @@ const Cart = () => {
           )}
           </div>
           {totaAmount>0 && (
-            <div className="w-full sm:w-1/4 ml-0 sm:ml-4">
+            <div>
               <div  className="mb-8">
                 <h1 className='mb-4 text-2xl font-bold' >Order Summary</h1>
                 <h3 >SubTotal: <span className='ml-44'>${totaAmount}</span></h3>
