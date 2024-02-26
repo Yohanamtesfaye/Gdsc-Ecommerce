@@ -24,10 +24,10 @@ const Home = () => {
       <div className='flex justify-center items-center'>
         <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-14 rounded mt-5' onClick={()=>navigate("/shop")}>Start Shopping </button>
       </div>
-      <div className='flex flex-wrap justify-center sm:ml-40 '>
-        <img src={img1} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '350px' }} />
-        <img src={img4} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '350px' }} />
-        <img src={img5} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '350px' }} />
+      <div className='flex flex-wrap justify-center sm:ml-40 mt-16'>
+        <img src={img1} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '250px' }} />
+        <img src={img4} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '250px' }} />
+        <img src={img5} className='mr-6 mb-6 sm:mb-0' style={{ width: '250px', height: '250px' }} />
       </div>
       <div className='flex justify-center items-center'>
         <h1 className='text-4xl font-bold font-serif mt-8 sm:mt-24 text-center'>Our latest arrivals</h1>
@@ -37,10 +37,10 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />  eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </div>
-      <div className='flex flex-wrap justify-center mt-8 sm:ml-40'>
-        <img src={img3} className='mr-6 sm:mb-0 mt-20' style={{ width: '250px', height: '350px' }} />
-        <img src={img2} className='mr-6 sm:mb-0' style={{ width: '250px', height: '350px' }} />
-        <img src={img6} className='mr-6 sm:mb-0 mt-20' style={{ width: '250px', height: '350px' }} />
+      <div className='flex flex-wrap justify-center mt-8 sm:ml-40 '>
+        <img src={img3} className='mr-6 sm:mb-0 mt-20' style={{ width: '250px', height: '250px' }} />
+        <img src={img2} className='mr-6 sm:mb-0' style={{ width: '250px', height: '250px' }} />
+        <img src={img6} className='mr-6 sm:mb-0 mt-20' style={{ width: '250px', height: '250px' }} />
       </div>
       <Footer />
     </div>
